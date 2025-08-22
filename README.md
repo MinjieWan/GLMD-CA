@@ -64,7 +64,7 @@ Infrared few-shot object detection (IFSOD) tackles the crucial problem of detect
              | -- annotations
     ...
   ```
-  - Download [IFSOD](https://pan.baidu.com/s/1zeBZWYlr89-D1QeZHEt8_w?pwd=0000) dataset, and put it in the following directory
+  - Download IFSOD dataset from [BaiDuYun](https://pan.baidu.com/s/1zeBZWYlr89-D1QeZHEt8_w?pwd=0000)(code:0000), and put it in the following directory
   - Datasets directory:
    ```angular2html
     ...
