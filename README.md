@@ -48,12 +48,25 @@ Infrared few-shot object detection (IFSOD) tackles the crucial problem of detect
 * Data Preparation
   - We train models on GCOCO, and finetune them on IFSOD
   - IFSOD is also employed for evaluation
+    
   - Download [COCO2017](https://cocodataset.org/#download) dataset, then
   ```angular2html
   python ./datasets/gcoco/coco_to_gray.py
   python ./datasets/gcoco/build_gcoco.py
+  // Data folders shoule be modified to yours
   ```
-  - Note：data folders shoule be modified to yours
+  - Put the converted GCOCO dataset in the following directory
+  ```angular2html
+    ...
+    datasets
+      | -- gcoco
+             | -- train
+             | -- annotations
+    ...
+  ```
+  
+  - Download [IFSOD](https://cocodataset.org/#download) dataset, then
+  - Datasets directory:
    ```angular2html
     ...
     datasets
