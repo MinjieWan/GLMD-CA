@@ -27,8 +27,16 @@ Infrared few-shot object detection (IFSOD) tackles the crucial problem of detect
   ```angular2html
   conda create -n GLMD-CA python=3.7
   ```
+  
 * Install PyTorch 1.7.1 with CUDA 11.0
   ```shell
   pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
   ```
-  Pytorch versions 1.X.X higher than 1.7.1 should also work. 
+  Pytorch versions 1.X.X higher than 1.7.1 should also work.
+
+* Install Detectron2
+  ```angular2html
+  python3 -m pip install detectron2==0.3 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu110/torch1.7.1/index.html
+  ```
+    - If you use other version of PyTorch/CUDA, check the latest version of Detectron2 in this page: [Detectron2](https://github.com/facebookresearch/detectron2/releases). 
+
