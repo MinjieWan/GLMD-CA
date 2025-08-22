@@ -54,4 +54,17 @@ Infrared few-shot object detection (IFSOD) tackles the crucial problem of detect
   python ./datasets/gcoco/build_gcoco.py
   ```
   - Note：data folders shoule be modified to yours
+   ```angular2html
+    ...
+    datasets
+      | -- gcoco
+             | -- train
+             | -- annotations
+      | -- ifsod
+             | -- images
+             | -- annotations
+    defrcn
+    tools
+    ...
+  ```
   
