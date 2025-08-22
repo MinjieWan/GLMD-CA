@@ -32,7 +32,6 @@ Infrared few-shot object detection (IFSOD) tackles the crucial problem of detect
   ```shell
   pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
   ```
-  Pytorch versions 1.X.X higher than 1.7.1 should also work.
 
 * Install Detectron2
   ```angular2html
@@ -40,3 +39,13 @@ Infrared few-shot object detection (IFSOD) tackles the crucial problem of detect
   ```
     - If you use other version of PyTorch/CUDA, check the latest version of Detectron2 in this page: [Detectron2](https://github.com/facebookresearch/detectron2/releases). 
 
+* Install other requirements. 
+  ```angular2html
+  python3 -m pip install -r requirements.txt
+  ```
+  
+**3. Prepare Data and Weights**
+* Data Preparation
+  - We train models on GCOCO, and finetune them on IFSOD
+  - IFSOD is also employed for evaluation
+  
