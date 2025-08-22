@@ -10,3 +10,10 @@ Infrared few-shot object detection (IFSOD) tackles the crucial problem of detect
 * 【2025/08/22】 We release the official PyTorch implementation of [GLMD-CA](https://github.com/MinjieWan/GLMD-CA).
 
 ## Quick Start
+**1. Check Requirements**
+* Linux with Python == 3.7
+* torch == 1.7.1 & torchvision that matches the PyTorch version.
+* CUDA 11.0
+* GCC >= 4.9
+
+**2. Build GLMD-CA**
