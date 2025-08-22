@@ -1,0 +1,29 @@
+_BASE_: "../Base-RCNN.yaml"
+MODEL:
+  WEIGHTS: "/home/nvidia/xuyunkai/Model/R-101.pkl"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 101
+  ENABLE_GLMD: True
+  GLMD:
+    ENABLE_CM: True
+    ENABLE_LR: True
+    ENABLE_MDF: True
+    ENABLE_CRD: True
+  RPN:
+    ENABLE_DECOUPLE: True
+    BACKWARD_SCALE: 0.0
+  ROI_HEADS:
+    NUM_CLASSES: 72
+    ENABLE_DECOUPLE: True
+    BACKWARD_SCALE: 0.75
+  PIXEL_MEAN: [112.8373, 112.8373, 112.8373]  # gcoco mean
+DATASETS:
+  TRAIN: ('gcoco_train',)
+  TEST: ()
+SOLVER:
+  IMS_PER_BATCH: 4
+  STEPS: (85000, 100000)
+  MAX_ITER: 110000
+  CHECKPOINT_PERIOD: 200000
+OUTPUT_DIR: "./output/coco_gray/train_debug/"
