@@ -81,5 +81,5 @@ Infrared few-shot object detection (IFSOD) tackles the crucial problem of detect
   ```
 
 * Weights Preparation
-  - Resnet101 pretrain model
-  - [PCB model](https://download.pytorch.org/models/resnet101-5d3b4d8f.pth)
+  - Resnet101 [pretrain model](https://dl.fbaipublicfiles.com/detectron2/ImageNetPretrained/MSRA/R-101.pkl)
+  - DeFRCN [PCB model](https://download.pytorch.org/models/resnet101-5d3b4d8f.pth)
