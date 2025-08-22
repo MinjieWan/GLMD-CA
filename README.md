@@ -83,3 +83,21 @@ Infrared few-shot object detection (IFSOD) tackles the crucial problem of detect
 * Weights Preparation
   - Resnet101 [pretrain model](https://dl.fbaipublicfiles.com/detectron2/ImageNetPretrained/MSRA/R-101.pkl)
   - DeFRCN [PCB model](https://download.pytorch.org/models/resnet101-5d3b4d8f.pth)
+
+**4. Training and Evaluation**
+* Train
+  ```shell
+  // single GPU
+  bash train.sh
+  // multi GPUS
+  bash mgpu_train.sh
+  ```
+* Evaluation
+  ```shell
+  // single GPU
+  bash finetune.sh
+  // multi GPUS
+  bash mgpu_finetune.sh
+  ```
+## Acknowledgement
+This repo is developed based on [DeFRCN](https://github.com/er-muyue/DeFRCN) and [Detectron2](https://github.com/facebookresearch/detectron2). Please check them for more details and features.
