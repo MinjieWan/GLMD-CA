@@ -17,3 +17,13 @@ Infrared few-shot object detection (IFSOD) tackles the crucial problem of detect
 * GCC >= 4.9
 
 **2. Build GLMD-CA**
+* Clone Code
+  ```angular2html
+  git clone https://github.com/MinjieWan/GLMD-CA.git
+  cd GLMD-CA
+  ```
+
+* Create a virtual environment (optional)
+  ```angular2html
+  conda create -n GLMD-CA python=3.7
+  ```
